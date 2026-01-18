@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Urban Sneakers - Carrito</title>
+  <meta name="description" content="Simulador de carrito de compras de zapatillas urbanas (DOM + Eventos + localStorage)." />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <div>
+        <h1 class="title">Urban Sneakers</h1>
+        <p class="subtitle">Carrito de compras (Nike, Adidas, Puma) • DOM + Eventos + localStorage</p>
+      </div>
+
+      <div class="header__badge" aria-label="Carrito">
+        <span>Carrito</span>
+        <strong id="cartCount">0</strong>
+      </div>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <section class="card">
+      <div class="card__header">
+        <h2 class="card__title">Catálogo</h2>
+
+        <div class="filters" aria-label="Filtros">
+          <label class="label">
+            Marca
+            <select id="brandFilter" class="input">
+              <option value="all">Todas</option>
+              <option value="Nike">Nike</option>
+              <option value="Adidas">Adidas</option>
+              <option value="Puma">Puma</option>
+            </select>
+          </label>
+
+          <label class="label">
+            Buscar
+            <input id="searchInput" class="input" type="search" placeholder="Ej: Air, Superstar..." />
+          </label>
+
+          <button id="resetBtn" class="btn btn--ghost" type="button">Reset</button>
+        </div>
+      </div>
+
+      <div id="statusBox" class="status" aria-live="polite"></div>
+      <div id="productGrid" class="grid" aria-label="Listado de productos"></div>
+    </section>
+
+    <aside class="card">
+      <div class="card__header">
+        <h2 class="card__title">Tu carrito</h2>
+        <button id="clearBtn" class="btn btn--ghost" type="button">Vaciar</button>
+      </div>
+
+      <div id="cartEmpty" class="cart__empty" aria-live="polite"></div>
+      <ul id="cartList" class="cart" aria-label="Productos en el carrito"></ul>
+
+      <div class="summary" aria-label="Resumen">
+        <div class="summary__row">
+          <span>Subtotal</span>
+          <strong id="subtotal">$0</strong>
+        </div>
+        <div class="summary__row">
+          <span>Envío</span>
+          <strong id="shipping">$0</strong>
+        </div>
+        <div class="summary__row summary__row--total">
+          <span>Total</span>
+          <strong id="total">$0</strong>
+        </div>
+
+        <button id="checkoutBtn" class="btn btn--primary" type="button">Finalizar compra</button>
+        <p id="checkoutMessage" class="status" aria-live="polite"></p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner footer__center">
+      <small>Entregable 2 • Interacción por DOM (sin prompt/alert) • Storage persistente</small>
+      <small>Proyecto desarrollado por Ignacio Benjamín Piderit Guerrero</small>
+    </div>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>

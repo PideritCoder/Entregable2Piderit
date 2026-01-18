@@ -1,0 +1,56 @@
+[
+  {
+    "id": "nk-001",
+    "brand": "Nike",
+    "model": "Air Force 1",
+    "price": 89990
+  },
+  {
+    "id": "nk-002",
+    "brand": "Nike",
+    "model": "Dunk Low",
+    "price": 109990
+  },
+  {
+    "id": "nk-003",
+    "brand": "Nike",
+    "model": "Air Max 90",
+    "price": 129990
+  },
+  {
+    "id": "ad-001",
+    "brand": "Adidas",
+    "model": "Stan Smith",
+    "price": 74990
+  },
+  {
+    "id": "ad-002",
+    "brand": "Adidas",
+    "model": "Superstar",
+    "price": 84990
+  },
+  {
+    "id": "ad-003",
+    "brand": "Adidas",
+    "model": "Forum Low",
+    "price": 99990
+  },
+  {
+    "id": "pm-001",
+    "brand": "Puma",
+    "model": "Suede Classic",
+    "price": 69990
+  },
+  {
+    "id": "pm-002",
+    "brand": "Puma",
+    "model": "RS-X",
+    "price": 94990
+  },
+  {
+    "id": "pm-003",
+    "brand": "Puma",
+    "model": "Cali Star",
+    "price": 79990
+  }
+]
